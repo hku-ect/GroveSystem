@@ -1,14 +1,13 @@
 # GroveSystem
 
 This document describes how to use the Grove sensor platform in combination with Arduino for Isadora. 
-You will find in this document general information and tutorials.
-
+You will find in this document general information and a tutorial.
 
 # Tutorial using Grove System with Isadora
 
 To use the Grove System with Isadora you need:
 
-* Isadora softwae (http://troikatronix.com/download/isadora-download/ or http://troikatronix.com/isa25beta)
+* Isadora software (http://troikatronix.com/download/isadora-download/ or http://troikatronix.com/isa25beta)
 * Arduino IDE (https://www.arduino.cc/en/Main/Software)
 * Grove Sensors, Grove Shield, an Arduino and a USB cable (https://www.seeedstudio.com/Grove-Starter-Kit-for-Arduino-p-1855.html)
 * Isadora Grove start file (groveBase.izz)
@@ -16,15 +15,18 @@ To use the Grove System with Isadora you need:
 
 **Then follow these steps:**
 
-1. Start by donwloading and installing the Arduino ide and if you use Windows install the USB drivers 
+1. Start by donwloading and installing the Arduino IDE and if you use Windows install the USB drivers 
 (http://wiki.seeed.cc/Download_Arduino_and_install_Arduino_driver/)
 2. Connect the Arduino to your computer, select the right port and arduino board and upload the "baseSketch.ino"
 3. If you open the serial monitor (make sure baud rate is the same as in the arduino code) you wil already see data flashing by. Then close the serial monitor again.
-4. Start Isadora en open groveBase.izz
+4. Start Isadora and open groveBase.izz
 5. In Isadora go to "Communications" -> "Serial port setup..." choose the right port and baud rate.
 6. In Isadora go to "Communication" -> "Enable Serial Ports"
-7. You should no see data coming in the "Serial port watcher"
-8. Explore the Isadora file, read te comments and experiment!
+7. You should now see data coming into the "Serial port watcher"
+8. Explore the Isadora file, read the comments and experiment!
+
+*NOTE: The communication over the Serial port can only be done by Either the Arduino IDE or Isadora, but not both at the same time!
+If you want to upload new code to the Arduino you first need to disable the Serial port communication in Isadora (go to "Communication" -> "Enable Serial Ports", this is a toggle) onlly then will you be able to upload new code to the Arduino. In reverse if you have uploaded code to the Arduino mkae sure the "Serial Monitor" is closed and enable the serial communication in Isadora (go to "Communication" -> "Enable Serial Ports", this is a toggle)*
 
 
 # Sensor Information
