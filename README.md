@@ -14,31 +14,24 @@ To use the Grove System with Isadora you need:
 * Isadora Grove start file (groveBase.izz)
 * Arduino start code (baseSketch.ino)
 
+**Then follow these steps:**
+
 1. Start by donwloading and installing the Arduino ide and if you use Windows install the USB drivers 
 (http://wiki.seeed.cc/Download_Arduino_and_install_Arduino_driver/)
-
 2. Connect the Arduino to your computer, select the right port and arduino board and upload the "baseSketch.ino"
-
 3. If you open the serial monitor (make sure baud rate is the same as in the arduino code) you wil already see data flashing by. Then close the serial monitor again.
-
 4. Start Isadora en open groveBase.izz
-
 5. In Isadora go to "Communications" -> "Serial port setup..." choose the right port and baud rate.
-
 6. In Isadora go to "Communication" -> "Enable Serial Ports"
-
 7. You should no see data coming in the "Serial port watcher"
-
 8. Explore the Isadora file, read te comments and experiment!
-
-
 
 
 # Sensor Information
 There are three different types of Grove sensors/actuators.
-Analog sensors
-Digital sensors&actuators
-I2C sensors&Actuators.
+* Analog sensors
+* Digital sensors & actuators
+* I2C sensors & actuators
 
 
 ## Analog sensors
