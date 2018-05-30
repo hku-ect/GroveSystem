@@ -59,6 +59,7 @@ Sense light intensity
 Grove touch - input sensor
 http://wiki.seeed.cc/Grove-Touch_Sensor/
 Measure touch yes/no
+
 Grove hear rate sensor - input sensor
 http://wiki.seeed.cc/Grove-Ear-clip_Heart_Rate_Sensor/
 Read your heart rate
